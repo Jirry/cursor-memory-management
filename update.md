@@ -23,6 +23,8 @@
 ---
 
 # 更新日志
+- 0.0.10
+    - 添加自动检查更新功能
 - 0.0.9
     - 将安装目录由 `.cursor/memory/` 改为 `.cursor/memories/`，需要执行如下操作：
         1. 本地记忆文件存储目录如果是 `.cursor/memory/`，则自动重命名明为 `.cursor/memories/`

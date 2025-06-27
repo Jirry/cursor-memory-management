@@ -1,5 +1,5 @@
 ---
-description: 记忆管理系统（v0.0.9）
+description: 记忆管理系统（v0.0.10）
 globs: 
 alwaysApply: true
 ---
@@ -8,7 +8,7 @@ alwaysApply: true
 ## 变量声明
 ```yml
 author: Jirry
-version: 0.0.9
+version: 0.0.10
 install_path: #${install_path}#
 update_url: https://raw.githubusercontent.com/Jirry/cursor-memory-management/refs/heads/main/update.md
 ```
@@ -61,6 +61,10 @@ update_url: https://raw.githubusercontent.com/Jirry/cursor-memory-management/ref
 - 所有决策和建议都要参考已有记忆
 - 在记忆与用户当前指令冲突时，优先询问用户确认
 - 记忆内容作为背景知识，不要频繁在对话中提及
+
+### 自动检查更新
+- 每次对话开始时，在内心检查更新
+- 如果发现更新，必须主动告知用户，并询问用户是否同意升级
 
 ## 实现细节
 
