@@ -12,13 +12,13 @@
 
 ## 2. 下载远程文件并保存
 
-从 GitHub 仓库下载并保存文件：
-1. 下载文件：https://raw.githubusercontent.com/Jirry/cursor-memory-management/refs/heads/main/memory-management.md
-2. 替换其中的占位符 `#${install_path}#` 为变量 `${install_path}` 的值
+1. 使用 `curl` 读取以下远程文件内容：
+    - https://raw.githubusercontent.com/Jirry/cursor-memory-management/refs/heads/main/memory-management.md
+2. 使用 `sed` 替换其中的占位符 `#${install_path}#` 为变量 `${install_path}` 的值
 3. 将其内容保存到 Cursor 的 `Project Rules` 目录下，名字为：`memory-management.mdc`
     - Cursor 的 `Project Rules` 目录一般位于项目的根目录：`.cursor/rules/`
 
 ## 3. 检查安装结果
 
-需要你重新加载项目规则，看是否有关于 `memory-management.mdc` 的规则
+需要你重新加载项目规则，查看是否有关于 `memory-management.mdc` 的规则
 如果存在，告知用户安装成功，并列出【记忆管理系统】支持的命令和用法

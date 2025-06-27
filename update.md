@@ -1,0 +1,26 @@
+# 更新流程
+
+按照如下步骤进行交互式升级：
+
+## 1. 获取安装目录
+
+读取本地文件中的 `install_path` 变量，并记录到变量：`${install_path}`
+
+## 2. 下载最新文件并保存
+
+1. 使用 `curl` 读取以下远程文件内容：
+    - https://raw.githubusercontent.com/Jirry/cursor-memory-management/refs/heads/main/memory-management.md
+2. 使用 `sed` 替换其中的占位符 `#${install_path}#` 为变量 `${install_path}` 的值
+3. 将其内容保存到 Cursor 的 `Project Rules` 目录下，名字为：`memory-management.mdc`
+    - Cursor 的 `Project Rules` 目录一般位于项目的根目录：`.cursor/rules/`
+
+## 3. 检查更新结果
+
+需要你重新加载项目规则，查看是否已经是最新版本
+如果已经是最新版本，告知用户升级成功，并列出本次升级的更新内容（重点为记忆文件的改动之处）
+
+---
+
+# 更新日志
+- 0.0.1
+  - 发布初始版本
