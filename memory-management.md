@@ -1,5 +1,5 @@
 ---
-description: 记忆管理系统（v0.0.6）
+description: 记忆管理系统（v0.0.7）
 globs: 
 alwaysApply: true
 ---
@@ -8,7 +8,7 @@ alwaysApply: true
 ## 变量声明
 ```yml
 author: Jirry
-version: 0.0.6
+version: 0.0.7
 install_path: #${install_path}#
 update_url: https://raw.githubusercontent.com/Jirry/cursor-memory-management/refs/heads/main/update.md
 ```
@@ -67,29 +67,18 @@ update_url: https://raw.githubusercontent.com/Jirry/cursor-memory-management/ref
 ```markdown
 # [类别名称]
 
-- [来源][记忆内容]
-- [来源][记忆内容]
+- [记忆内容]
+- [记忆内容]
 ```
 
 ## 使用说明
 
-1. 新增记忆
-  - 使用 `请记住` 关键词，触发记忆新增
-
-2. 删除记忆
-  - 使用 `删除记忆` 关键词，触发记忆删除
-
-3. 更新记忆
-  - 使用 `更新记忆` 关键词，触发记忆更新
-
-4. 查询记忆
-  - 使用 `查询记忆`、`回忆` 关键词，触发记忆查询
-
-5. 整理记忆
-  - 使用 `整理记忆` 关键词，触发记忆整理
-
-6. 系统更新
-  - 使用 `记忆管理系统升级`、`记忆管理系统更新`、`检查记忆管理系统更新` 等命令，触发系统检查更新或自动升级
+1. 新增记忆：使用 `请记住` 关键词，触发记忆新增
+2. 删除记忆：使用 `删除记忆` 关键词，触发记忆删除
+3. 更新记忆：使用 `更新记忆` 关键词，触发记忆更新
+4. 查询记忆：使用 `查询记忆`、`回忆` 关键词，触发记忆查询
+5. 整理记忆：使用 `整理记忆` 关键词，触发记忆整理
+6. 系统更新：使用 `记忆管理系统升级`、`记忆管理系统更新`、`检查记忆管理系统更新` 等命令，触发系统检查更新或自动升级
 
 
 ## 检查更新
