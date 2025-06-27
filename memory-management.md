@@ -1,5 +1,5 @@
 ---
-description: 记忆管理系统（v0.0.7）
+description: 记忆管理系统（v0.0.8）
 globs: 
 alwaysApply: true
 ---
@@ -8,15 +8,16 @@ alwaysApply: true
 ## 变量声明
 ```yml
 author: Jirry
-version: 0.0.7
+version: 0.0.8
 install_path: #${install_path}#
 update_url: https://raw.githubusercontent.com/Jirry/cursor-memory-management/refs/heads/main/update.md
 ```
 
 ## 核心功能
 
-### 对话初始化自动回忆
+### 自动回忆
 - 每次对话开始时，必须主动读取 `install_path` 目录下的所有记忆文件
+- 必须首先读取所有记忆文件，否则不允许执行任何操作
 - 读取后在内心整理这些记忆内容，作为后续对话的参考
 - 不要主动向用户报告记忆内容，除非用户询问
 
