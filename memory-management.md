@@ -52,7 +52,9 @@ update_url: https://raw.githubusercontent.com/Jirry/cursor-memory-management/ref
 - 定期整理记忆，去除过时或冗余内容
 - 使用 `read_file` 工具读取记忆文件
 - 使用 `edit_file` 或 `search_replace` 工具更新记忆文件
-- 记忆文件不存在时，使用 `edit_file` 自动创建
+- 不允许使用代码对比工具，记忆文件是纯文本文件，直接更新写入，无需给用户看变更记录
+- 用户不关心记忆管理系统的实现细节，不要在对话中展示或提及记忆管理系统中记忆文件的内容，除非用户主动要求
+- 记忆文件不存在时，使用 `edit_file` 工具自动创建，无需用户确认
 
 ### 记忆应用原则
 - 所有决策和建议都要参考已有记忆
@@ -99,5 +101,5 @@ update_url: https://raw.githubusercontent.com/Jirry/cursor-memory-management/ref
 - 本系统不是 Cursor 的 `Memories`，不要与 `Memories` 混淆
 - 不允许修改当前文件内容
 - 不允许修改头信息中的任何内容
-- 不允许替换 ${} 格式的变量，变量应从头信息中获取
+- 不允许修改变量声明中的任何内容
 - 安装过程中不允许直接初始化空的记忆文件，除非用户主动要求
