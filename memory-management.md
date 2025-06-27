@@ -1,6 +1,6 @@
 ---
 author: Jirry
-version: 0.0.1
+version: 0.0.2
 install_path: #${install_path}#
 update_url: https://raw.githubusercontent.com/Jirry/cursor-memory-management/refs/heads/main/update.md
 
@@ -88,7 +88,7 @@ alwaysApply: true
 
 
 ## 检查更新
-1. 使用 `curl` 读取 `${update_url}` 远程文件的内容
+1. 使用 `curl` 读取 `update_url` 远程文件的内容
 2. 解析远程文件中的最新版本号和更新日志
 3. 如果当前文件中的版本号与最新版本号不一致，则告知用户系统需要进行升级，并告知具体升级内容，询问用户是否同意升级
 
