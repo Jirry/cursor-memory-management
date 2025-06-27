@@ -23,6 +23,10 @@
 ---
 
 # 更新日志
+- 0.0.9
+    - 将安装目录由 `.cursor/memory/` 改为 `.cursor/memories/`，需要执行如下操作：
+        1. 本地记忆文件存储目录如果是 `.cursor/memory/`，则自动重命名明为 `.cursor/memories/`
+        2. 将 `.cursor/rules/memory-management.mdc` 文件中的 `install_path` 变量值由 `.cursor/memory/` 改为 `.cursor/memories/`
 - 0.0.8
     - 添加强制自动回忆规则
 - 0.0.7

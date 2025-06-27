@@ -1,5 +1,5 @@
 ---
-description: 记忆管理系统（v0.0.8）
+description: 记忆管理系统（v0.0.9）
 globs: 
 alwaysApply: true
 ---
@@ -8,7 +8,7 @@ alwaysApply: true
 ## 变量声明
 ```yml
 author: Jirry
-version: 0.0.8
+version: 0.0.9
 install_path: #${install_path}#
 update_url: https://raw.githubusercontent.com/Jirry/cursor-memory-management/refs/heads/main/update.md
 ```
