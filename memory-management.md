@@ -1,14 +1,17 @@
 ---
-author: Jirry
-version: 0.0.2
-install_path: #${install_path}#
-update_url: https://raw.githubusercontent.com/Jirry/cursor-memory-management/refs/heads/main/update.md
-
 description: 记忆管理系统
 globs: 
 alwaysApply: true
 ---
 # 记忆管理系统
+
+## 变量定义
+```yml
+author: Jirry
+version: 0.0.3
+install_path: #${install_path}#
+update_url: https://raw.githubusercontent.com/Jirry/cursor-memory-management/refs/heads/main/update.md
+```
 
 ## 核心功能
 
