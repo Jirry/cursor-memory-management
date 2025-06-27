@@ -4,24 +4,28 @@
 
 ## 1. 获取安装目录
 
-读取本地文件中的 `install_path` 变量，并记录到变量：`${install_path}`
+- 读取本地文件 `.cursor/rules/memory-management.mdc` 中变量定义的 `install_path` 变量，并记下来
 
 ## 2. 下载最新文件并保存
 
 1. 使用 `curl` 读取以下远程文件内容：
     - https://raw.githubusercontent.com/Jirry/cursor-memory-management/refs/heads/main/memory-management.md
-2. 使用 `sed` 替换其中的占位符 `#${install_path}#` 为变量 `${install_path}` 的值
+2. 使用 `sed` 替换其中的占位符 `#${install_path}#` 为变量 `install_path` 的值
 3. 将其内容保存到 Cursor 的 `Project Rules` 目录下，名字为：`memory-management.mdc`
     - Cursor 的 `Project Rules` 目录一般位于项目的根目录：`.cursor/rules/`
 
 ## 3. 检查更新结果
 
-需要你重新加载项目规则，查看是否已经是最新版本
-如果已经是最新版本，告知用户升级成功，并列出本次升级的更新内容（重点为记忆文件的改动之处）
+- 需要你重新加载项目规则，查看是否已经是最新版本
+- 读取 mdc 文件时，以纯文本方式读取，或者以 `read_file` 工具读取，因为 mdc 文件会隐藏头信息
+- 如果已经是最新版本，告知用户升级成功，并列出本次升级的更新内容（重点为记忆文件的改动之处）
 
 ---
 
 # 更新日志
+- 0.0.4
+  - 添加版本号到描述信息
+  - 优化 mdc 文件的读取方式
 - 0.0.3
   - 添加变量定义模块
   - 强制使用远程的 memory-management.md 文件，替换本地文件
