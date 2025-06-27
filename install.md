@@ -1,0 +1,24 @@
+# 记忆管理系统安装脚本
+
+按照如下步骤进行交互式安装：
+
+## 1. 询问用户安装目录
+
+询问用户选择安装目录：
+- **选项A**: 保存到项目根目录，默认为： `./cursor/memory/`
+- **选项B**: 保存到指定目录（用户可输入自定义路径）
+
+等待用户选择并将结果记录到变量：`${install_path}`
+
+## 2. 下载远程文件并保存
+
+从 GitHub 仓库下载并保存文件：
+1. 下载文件：https://raw.githubusercontent.com/Jirry/cursor-memory-management/refs/heads/main/memory-management.md
+2. 替换其中的占位符 `#${install_path}#` 为变量 `${install_path}` 的值
+3. 将其内容保存到 Cursor 的 `Project Rules` 目录下，名字为：`memory-management.mdc`
+    - Cursor 的 `Project Rules` 目录一般位于项目的根目录：`.cursor/rules/`
+
+## 3. 检查安装结果
+
+需要你重新加载项目规则，看是否有关于 `memory-management.mdc` 的规则
+如果存在，告知用户安装成功，并列出【记忆管理系统】支持的命令和用法
